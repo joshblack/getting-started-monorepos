@@ -1,0 +1,11 @@
+{
+  "name": "05-common-monorepo-tasks",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.8.0"
+  }
+}

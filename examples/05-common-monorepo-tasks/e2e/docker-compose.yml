@@ -1,0 +1,21 @@
+version: '2.1'
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:latest
+    container_name: verdaccio
+    ports:
+      - "4873:4873"
+    volumes:
+      - verdaccio:/verdaccio
+
+  test:
+    build:
+      context: ../
+      dockerfile: ./e2e/Dockerfile
+    depends_on:
+      - verdaccio
+
+volumes:
+  verdaccio:
+    driver: local
