@@ -156,6 +156,6 @@ as the number of packages in your ecosystem increases 😞.
 In a monorepo setup, there are typically two ideas of versioning modes:
 
 - Independent, which lets each package follow it's own versioning scheme
-- Group, all packages have the same version numbers
+- Fixed, all packages have the same version numbers
 
 Both of these can help solve the maintenance nightmare of the above example.
